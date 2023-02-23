@@ -13,7 +13,7 @@
     --black-white: rgba(0, 0, 0, 1);
     --ui-color: 255, 255, 255;
     --navbar-color: rgba(255, 255, 255, 0.65);
-    --navmenu-color: rgba(255, 255, 255, 0.75);
+    --navmenu-color: rgba(255, 255, 255, 0.85);
     --shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -26,7 +26,7 @@
         --black-white: rgba(255, 255, 255, 1);
         --ui-color: 0, 0, 0;
         --navbar-color: rgba(0, 0, 0, 0.65);
-        --navmenu-color: rgba(0, 0, 0, 0.75);
+        --navmenu-color: rgba(0, 0, 0, 0.85);
         --shadow: rgba(255, 255, 255, 0.2);
     }
 }
@@ -203,6 +203,7 @@ h1, h2 {
     font-variant: normal;
     line-height: 1.3;
     text-transform: lowercase;
+    text-align: center;
 }
 
 h1 {font-size: 3.052rem;}
@@ -358,7 +359,7 @@ a:where([href^="#"], [href^="/"], [href^="//"]), a:not([href]) {
 @media only screen and (max-width: 1200px) {
     .nav-menu {
         position: fixed;
-        left: -110%;
+        left: -106%;
         top: 0;
         bottom: 0;
         flex-direction: column;
@@ -441,11 +442,14 @@ main > section {
     max-width: 80vmax;
     width: fit-content;
     margin: 1rem auto 0;
+    list-style-position: inside;
 }
 
 #timeline ul li {
     font-size: 1.3rem;
     line-height: 1.7;
+    height: auto;
+    width: auto;
 }
 
 #timeline ul li::marker {
@@ -453,7 +457,11 @@ main > section {
     color: var(--heading-color);
 }
 
-#timeline ul li p span {
+#timeline ul li p {
+    display: inline;
+}
+
+#timeline ul li span {
     font-family: "Twemoji";
     font-size: 2.3rem;
     vertical-align: middle;
@@ -578,7 +586,8 @@ main > section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 88vw;
+    max-width: 88vw;
+    margin: 0 auto;
     margin-top: 2rem;
 }
 
