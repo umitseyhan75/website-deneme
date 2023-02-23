@@ -13,7 +13,7 @@
     --black-white: rgba(0, 0, 0, 1);
     --ui-color: 255, 255, 255;
     --navbar-color: rgba(255, 255, 255, 0.65);
-    --navmenu-color: rgba(255, 255, 255, 0.85);
+    --navmenu-color: rgba(255, 255, 255, 0.90);
     --shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -26,7 +26,7 @@
         --black-white: rgba(255, 255, 255, 1);
         --ui-color: 0, 0, 0;
         --navbar-color: rgba(0, 0, 0, 0.65);
-        --navmenu-color: rgba(0, 0, 0, 0.85);
+        --navmenu-color: rgba(0, 0, 0, 0.90);
         --shadow: rgba(255, 255, 255, 0.2);
     }
 }
