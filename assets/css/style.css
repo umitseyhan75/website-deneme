@@ -12,7 +12,8 @@
     --white-black: rgba(255, 255, 255, 1);
     --black-white: rgba(0, 0, 0, 1);
     --ui-color: 255, 255, 255;
-    --nav-color: rgba(255, 255, 255, 0.65);
+    --navbar-color: rgba(255, 255, 255, 0.65);
+    --navmenu-color: rgba(255, 255, 255, 0.75);
     --shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -24,7 +25,8 @@
         --white-black: rgba(0, 0, 0, 1);
         --black-white: rgba(255, 255, 255, 1);
         --ui-color: 0, 0, 0;
-        --nav-color: rgba(0, 0, 0, 0.65);
+        --navbar-color: rgba(0, 0, 0, 0.65);
+        --navmenu-color: rgba(0, 0, 0, 0.75);
         --shadow: rgba(255, 255, 255, 0.2);
     }
 }
@@ -254,7 +256,7 @@ a:where([href^="#"], [href^="/"], [href^="//"]), a:not([href]) {
     height: fit-content;
     padding: 1.5rem;
     margin: 1% auto;
-    background-color: var(--nav-color);
+    background-color: var(--navbar-color);
     backdrop-filter: blur(12px);
     box-shadow: 0px 7px 24px var(--shadow);
     position: sticky;
@@ -357,12 +359,12 @@ a:where([href^="#"], [href^="/"], [href^="//"]), a:not([href]) {
     .nav-menu {
         position: fixed;
         left: -110%;
-        top: 99%;
+        top: 0;
         bottom: 0;
         flex-direction: column;
         width: 100%;
-        height: min-content;
-        background-color: var(--nav-color);
+        min-height: 100vh;
+        background-color: var(--navmenu-color);
         backdrop-filter: blur(12px);
         text-align: center;
         transition: 0.3s;
